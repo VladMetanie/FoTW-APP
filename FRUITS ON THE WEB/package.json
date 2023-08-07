@@ -1,0 +1,31 @@
+{
+  "name": "fruits-on-the-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Dascalu Rares, Metanie Vlad, Munteanu Denis",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cookie": "^0.5.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "feed": "^4.2.2",
+    "mongodb": "^5.5.0",
+    "node-localstorage": "^2.2.1",
+    "nodemailer": "^6.9.3",
+    "rss": "^1.2.2",
+    "rss-parser": "^3.13.0",
+    "uuid": "^9.0.0"
+  }
+}

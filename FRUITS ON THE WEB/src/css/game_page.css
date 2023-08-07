@@ -1,0 +1,93 @@
+.game_page {
+  display: grid;
+  grid-gap: 0%;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 0.5%;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.3), 0 0 0 2px green,
+    0.3em 0.3em 1em black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-bottom: 0%;
+  margin: auto;
+}
+
+.game_page .fruit img {
+  display: flex;
+  justify-content: center;
+  border-radius: 2%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.paused {
+  display: none;
+}
+
+.game_page .fruit:hover {
+  transform: scale(1.1);
+}
+
+.score {
+  font-family: "Amatic SC", bold;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 90%;
+  color: #01d901;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 0.5%;
+  margin-bottom: 3%;
+  text-shadow: 0 0 3px white, 0 0 5px lightgreen;
+}
+
+
+.timer {
+  font-family: "Amatic SC", bold;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 90%;
+  color: #01d901;
+  text-align: left;
+  margin-left: 5%;
+  text-shadow: 0 0 3px white, 0 0 5px lightgreen;
+}
+
+.game_buttons button {
+  font-family: "Amatic SC", bold;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  border: 2px solid rgb(0, 94, 0);
+  color: white;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(0, 175, 0),
+    rgb(0, 115, 0) 10%,
+    rgb(205, 135, 0) 10%,
+    rgb(255, 175, 20) 20%
+  );
+  background-size: 100%;
+  transition: background 0.3s ease-in-out;
+  align-self: start;
+  font-size: xx-large;
+}
+
+.game_buttons button:hover {
+  background-position: 150px;
+}
+
+.game_buttons button:active {
+  box-shadow: 0 0 50px lightgreen, 0 0 50px lightgreen;
+}
+
